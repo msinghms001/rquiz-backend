@@ -9,9 +9,10 @@ from apiv1.controller import LandingController
 class CustPagination(PageNumberPagination):
     page_size=10
     page_query_param="next"
+    ran=112
 
 class Landing(ViewSet):
-    
+
 
     @action(methods=['get'],detail=False,url_path='hello')
     def land(self,request):
