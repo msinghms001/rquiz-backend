@@ -11,6 +11,7 @@ class CustPagination(PageNumberPagination):
     page_query_param="next"
 
 class Landing(ViewSet):
+    
 
     @action(methods=['get'],detail=False,url_path='hello')
     def land(self,request):
